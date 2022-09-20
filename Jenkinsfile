@@ -8,34 +8,33 @@ pipeline
         {
             steps 
             {
-                echo 'Build App'
+                echo 'Build Application'
             }
         }
 
-        stage('Test') 
+         stage('Test') 
         {
             steps 
             {
-                echo 'Test App'
+                echo 'Test Application'
             }
         }
 
-        stage('Deploy') 
+         stage('Deploy') 
         {
             steps 
             {
-                echo 'Deploy App'
+                echo 'Deploy Application'
             }
         }
     }
 
-    post
+    post 
     {
-
-    	always
-    	{
-    		emailext body: 'Summary', subject: 'Pipeline Status', to: 'selenium3bymukesh@gmail.com'
-    	}
-
+        
+        always 
+        {
+            emailext body: 'Summary', subject: 'Pipeline Status', to: 'renukaraju89@gmail.com'
+        }
     }
 }
