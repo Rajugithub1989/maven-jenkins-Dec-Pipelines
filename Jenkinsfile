@@ -24,7 +24,7 @@ pipeline
         {
             steps 
             {
-                echoo 'Deploy Application'
+                echo 'Deploy Application'
             }
         }
     }
